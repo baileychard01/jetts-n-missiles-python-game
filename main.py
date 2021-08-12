@@ -1,6 +1,7 @@
 # importing files etc
 import pygame
 from player import player
+from missiles import missiles
 
 # set python window
 pygame.display.set_caption('jets n missiles')
@@ -21,6 +22,7 @@ Worldimage = pygame.image.load('FSKY.PNG')
 Worldimage = pygame.transform.scale(Worldimage, (1280, 720))
 pjet = pygame.image.load('jet.png')
 pjet = pygame.transform.scale(pjet, (100, 56))
+missiles = pygame.image.load()
 
 player = player(pjet, 20, 60)
 def IsKeyDown(event, key):
