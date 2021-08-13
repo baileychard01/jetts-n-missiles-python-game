@@ -47,11 +47,9 @@ class player:
 		self.ydirection = y
 		if x < 0:
 			self.currentImage = pygame.transform.flip(self.image, True, False)
-		elif x >0:
+		elif x > 0:
 			self.currentImage = self.image
 		elif y < 0:
-			self.currentImage = pygame.transform.rotate(self.image,90)
+			self.currentImage = pygame.transform.rotate(self.image, 90)
 		elif y > 0:
-			self.currentImage = pygame.transform.rotate(self.image,-90)
-
-
+			self.currentImage = pygame.transform.rotate(self.image, -90)
